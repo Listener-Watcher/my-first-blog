@@ -1,0 +1,6 @@
+ls -a(check if git repository exists)
+git add --all
+git pull
+git push
+git status
+git clone https://github.com/Listener-Watcher/my-first-blog.git
