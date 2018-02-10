@@ -6,5 +6,8 @@ urlpatterns = [
 	url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),	#^--the beginning;\d--can only be a digit;+==need to be one or more digits;$--the end;example:http://127.0.0.1:8000/post/1233457/ is ok.
 	url(r'^post/new/$',views.post_new,name='post_new'),
 	url(r'^post/(?P<pk>\d+)/edit/$',views.post_edit,name='post_edit'),
+	url(r'^drafts/$', views.post_draft_list, name='post_draft_list'),
+	url(r'^post/(?P<pk>\d+)/publish/$', views.post_publish, name='post_publish'),
+	url(r'^post/(?P<pk>\d+)/remove/$', views.post_remove, name='post_remove'),
 	
 ]
